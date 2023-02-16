@@ -15,12 +15,8 @@ html{
     font-family: 'Nunito', sans-serif;
     position: relative;
 }
-.logo{
-    font-weight: 600;
-    font-size: 3.8rem;
-    transition: .3s linear;
-    -webkit-text-strok: 2px #520075;
-}
+
+/* Esto es el titulo que cambiar de colorrrrrr */
 .logo:hover{
     color: #D7BDE2;
     text-shadow: 00 10px rgba(162, 0, 184, 0.5),
@@ -50,6 +46,8 @@ html{
      00 5120px rgba(162, 0, 184, 0.5),
 
 }
+
+/*Esto es la lista de acerca de nosotros*/
 nav{ 
     width: 100%;
     display: flex;
@@ -68,6 +66,8 @@ ul li{
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
+
+/*Esto es el texto que cambia de color */
 ul li:hover{
  border-radius: 20px;
  background-color: #D7BDE2;
@@ -79,19 +79,21 @@ header{
     bottom: 30%;
     padding: 0 50px;
 }
-
+/* ====  esto es el titulo principal*/
 header h1{
     font-size: 7rem;
 }
+/*====   este es el titulo*/
 header h2{
     font-size: 4rem;
 }
+/*====    este es el parrafo debajo del titulo*/
 header p{
     margin-top: 20px;
     margin-bottom: 20;
     font-size: 1.7rem;
 }
-
+/*Este es boton de post now! */
 
 header button{
  padding: 0 5px;
@@ -105,7 +107,7 @@ background-color: #D7BDE2 ;
 cursor: pointer;
 border-radius: 20px;
 }
-
+/* Dentro del boton post now esto es la flecha*/
 header  button img{
     display: none;
     
@@ -129,7 +131,7 @@ header button:hover{
     bottom: 0;
     z-index: 999;
 }
-
+/*Esto es el cubo */
 .container .emp{
 
     position: absolute;
@@ -155,7 +157,7 @@ from{
     transform:rotate(0deg);
 }
 }
-
+/*Esto es el icono de enlances en la parte inferior */
 
 .iconos{
     bottom: 8%;
@@ -163,14 +165,14 @@ from{
     padding: 0 50px;
 }
 
-.iconos > img{
+.iconos a > img{
     font-size: 5.5rem;
     padding: 0 10px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 
-.iconos > img:hover{
+.iconos a > img:hover{
  background-color:  #D7BDE2;
  border-radius: 900px;
 }
