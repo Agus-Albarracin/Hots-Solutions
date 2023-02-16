@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 html{
     font-size: 62.5%;
 }
@@ -11,39 +12,43 @@ html{
 .container{
     height: 100vh;
     width: 100%;
+    color: #ffffff;
     background-color:#ffffff;
     font-family: 'Nunito', sans-serif;
     position: relative;
+    background-image: url(img/rubik2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 /* Esto es el titulo que cambiar de colorrrrrr */
 .logo:hover{
-    color: #D7BDE2;
-    text-shadow: 00 10px rgba(162, 0, 184, 0.5),
-     00 10px rgba(162, 0, 184, 0.5),
-     00 20px rgba(162, 0, 184, 0.5),
-     00 40px rgba(162, 0, 184, 0.5),
-     00 80px rgba(162, 0, 184, 0.5),
-     00 160px rgba(162, 0, 184, 0.5),
-     00 320px rgba(162, 0, 184, 0.5),
-     00 640px rgba(162, 0, 184, 0.5),
-     00 1280px rgba(162, 0, 184, 0.5),
-     00 2560px rgba(162, 0, 184, 0.5),
-     00 5120px rgba(162, 0, 184, 0.5),
+    color: #f50000;
+    text-shadow: 00 10px #ff1e00f5,
+     00 10px rgba(255, 30, 0, 0.9),
+     00 20px rgba(255, 30, 0, 0.9),
+     00 40px rgba(255, 30, 0, 0.9),
+     00 80px rgba(255, 30, 0, 0.9),
+     00 160px rgba(255, 30, 0, 0.9),
+     00 320px rgba(255, 30, 0, 0.9),
+     00 640px rgba(255, 30, 0, 0.9),
+     00 1280px rgba(255, 30, 0, 0.9),
+     00 2560px rgba(255, 30, 0, 0.9),
+     00 5120px rgba(255, 30, 0, 0.9),
 }
 .neon:hover{
-    color: #D7BDE2;
-    text-shadow: 00 5px rgba(162, 0, 184, 0.5),
-     00 10px rgba(162, 0, 184, 0.5),
-     00 20px rgba(162, 0, 184, 0.5),
-     00 40px rgba(162, 0, 184, 0.5),
-     00 80px rgba(162, 0, 184, 0.5),
-     00 160px rgba(162, 0, 184, 0.5),
-     00 320px rgba(162, 0, 184, 0.5),
-     00 640px rgba(162, 0, 184, 0.5),
-     00 1280px rgba(162, 0, 184, 0.5),
-     00 2560px rgba(162, 0, 184, 0.5),
-     00 5120px rgba(162, 0, 184, 0.5),
+    color: #fa0101;
+    text-shadow: 00 5px rgba(255, 30, 0, 0.9),
+     00 10px rgba(255, 30, 0, 0.9),
+     00 20px rgba(255, 30, 0, 0.9),
+     00 40px rgba(255, 30, 0, 0.9),
+     00 80px rgba(255, 30, 0, 0.9),
+     00 160px rgba(255, 30, 0, 0.9),
+     00 320px rgba(255, 30, 0, 0.9),
+     00 640px rgba(255, 30, 0, 0.9),
+     00 1280px rgba(255, 30, 0, 0.9),
+     00 2560px rgba(255, 30, 0, 0.9),
+     00 5120px rgba(255, 30, 0, 0.9),
 
 }
 
@@ -70,8 +75,8 @@ ul li{
 /*Esto es el texto que cambia de color */
 ul li:hover{
  border-radius: 20px;
- background-color: #D7BDE2;
- color: #ffffff;
+ background-color: #174fe9;
+ color: #ff1c1c;
  
 }
 header{
@@ -96,14 +101,15 @@ header p{
 /*Este es boton de post now! */
 
 header button{
- padding: 0 5px;
+    
+ padding: 100 5px;
 width: 100px;
 outline: none;
 border: 0;
 height: 50px;
 font-weight: 500;
 text-align: center;
-background-color: #D7BDE2 ;
+background-color: #d2e900 ;
 cursor: pointer;
 border-radius: 20px;
 }
@@ -134,7 +140,7 @@ header button:hover{
 /*Esto es el cubo */
 .container .emp{
 
-    position: absolute;
+    position: relative;
     height: 350px;
     width: 350px;
     left: 65%;
@@ -142,7 +148,7 @@ header button:hover{
     z-index: 999;
     overflow: hidden;
     box-shadow: 10px;
-    top: 120px;
+    top: 10px;
     border-radius: 50%;
     animation-name: girarb;
     animation-duration: 20s;
@@ -173,7 +179,7 @@ from{
 }
 
 .iconos a > img:hover{
- background-color:  #D7BDE2;
+ background-color:  #92ff3af1;
  border-radius: 900px;
 }
 
