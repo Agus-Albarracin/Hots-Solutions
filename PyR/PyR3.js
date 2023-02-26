@@ -15,7 +15,7 @@ const comments = []
 
 // commentContainer = commentContainer.innerHTML;
 // inputContainer = inputContainer.innerHTML;
-input = input.innerHTML;
+// input = input.innerHTML;
 
 
    commentContainer.appendChild(inputContainer);

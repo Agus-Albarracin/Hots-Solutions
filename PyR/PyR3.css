@@ -10,24 +10,24 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column; 
-    margin-top: 200px;
-    gap: 5px;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 50px;
     background-image: url(img/rubik.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
     }
 
-/* textarea { */
-    /* font-family:'Nunito', sans-serif;  */
-    /* height: 100px;
+textarea {
+    font-family:'Nunito', sans-serif; 
+    height: 100px;
     border-radius: 5px;
     border: solid 3px #d9ff03;
-    background-color: rgba(136, 136, 136, 0.747); */
-    /* position: inherit;   */
-    /* width: 994px; */
+    background-color: rgba(136, 136, 136, 0.747);
+    position: inherit;  
+    width: 994px;
     
-/* } */
+}
 
 
 /* CAJA TRANSPARENTE DE ATRAS */
@@ -54,28 +54,27 @@ gap: 10px;
 
 
 .input-com{  
-
     width: 700px;
     height: 100px;
     background: none;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    gap:  5px;
-
+    
 }
 #idTextarea{
+
     font-family:'Nunito', sans-serif;
     outline: none;
     border: 0;
-    width: 100%;
-    height: 50px;
+    width: 600;
+    height: 400px;
     padding: 10px 50px 10px 50px;
     font-size: 15px;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgba(255,255,255,0);
-    transition-duration: 200ms;
+    border: solid 3px #d9ff03;
+    background-color: #fdfdfda1;
+    
+    
 }
 
 textarea {
@@ -85,13 +84,11 @@ textarea {
 }
 
 #idTextarea::placeholder{
-    color: #ffffff;
+    color: #000000;
     font-family:'Nunito', sans-serif;
 }
 
-#idTextarea:focus{
-    border-bottom: 2px solid red;
-}
+
 
 /* BOTOOOOON */
 .divBoton-agg{
@@ -223,6 +220,7 @@ gap: 10px
 } */
 
 .imagen-usurio{
+    
     width: 50px;
     height: 10px;
     display: flex;
