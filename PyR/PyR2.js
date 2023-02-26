@@ -4,20 +4,17 @@ function nComentario(){
     let li = document.createElement("li");
 
     
-    var valorIngresado= $('#nuevoComentario').val();
+    var valorIngresado = document.getElementById("nuevoComentario").value; 
    valorIngresado = valorIngresado.replace (/\n|\r/g, "<br>");
-      
+      li.innerHTML = valorIngresado;
      
-    let text = document.createTextNode(valorIngresado);
-    
-    li.appendChild(text);
 
      if (valorIngresado === ''){
 
         alert("Ingrese un comentario!")
 
     }else{
-        document.getElementById("comentarios").appendChild(li)
+        document.getElementById("comments-container").appendChild(li)
         
     }
 

@@ -36,7 +36,34 @@ html{
      00 2560px rgba(255, 30, 0, 0.9),
      00 5120px rgba(255, 30, 0, 0.9),
 }
-.neon:hover{
+.neon{
+
+    background-image: linear-gradient(
+    to right,
+    #510086,
+    #ff0000e3 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.neon:hover {
+    background-position: 0;
+   }
+   
+.neon:hover::before {
+     width:100%;
+   }
+
+/* .neon:hover{
     color: #fa0101;
     text-shadow: 00 5px rgba(255, 30, 0, 0.9),
      00 10px rgba(255, 30, 0, 0.9),
@@ -50,7 +77,7 @@ html{
      00 2560px rgba(255, 30, 0, 0.9),
      00 5120px rgba(255, 30, 0, 0.9),
 
-}
+} */
 
 /*Esto es la lista de acerca de nosotros*/
 nav{ 
@@ -59,6 +86,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
+    
 
 }
 
@@ -86,6 +114,7 @@ header{
 }
 /* ====  esto es el titulo principal*/
 header h1{
+    
     font-size: 7rem;
 }
 /*====   este es el titulo*/
@@ -101,17 +130,21 @@ header p{
 /*Este es boton de post now! */
 
 header button{
-    
- padding: 100 5px;
-width: 100px;
-outline: none;
-border: 0;
-height: 50px;
-font-weight: 500;
-text-align: center;
-background-color: #d2e900 ;
-cursor: pointer;
-border-radius: 20px;
+
+    font-family:'Nunito', sans-serif;
+    padding: 1px 5px 1px 5px;
+    border-radius: 20px;
+    border-color: #ff7300;
+    outline: inset;
+    outline-color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(2, 2, 2);
+    width: 100px;
+    height: 50px;
+    background-color: #ff0000 ;
+    cursor: pointer;
+    border-radius: 20px;
 }
 /* Dentro del boton post now esto es la flecha*/
 header  button img{
@@ -130,12 +163,13 @@ header button:hover{
 
 }
 .container .flecha{
+    
     position:relative;
-    height: 100px;
-    width: 50px;
+    height: 10px;
+    width: 10px;
     right: 10%;
     bottom: 0;
-    z-index: 999;
+   
 }
 /*Esto es el cubo */
 .container .emp{
@@ -179,7 +213,7 @@ from{
 }
 
 .iconos a > img:hover{
- background-color:  #92ff3af1;
+ background-color:  #fffffff1;
  border-radius: 900px;
 }
 
