@@ -3,7 +3,7 @@ const cors = require('cors')
 const db = require('./db')
 const Model = require('./model')
 const app = express()
-db('mongodb://localhost:27017/quill')
+db('mongodb+srv://agustinalbarracin:ArgBoca!12@cluster0.ei0sqzj.mongodb.net/?retryWrites=true&w=majority') 
 
 app.use(cors())
 app.use(express.json())
