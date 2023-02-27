@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    background-color:#ffffff;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    background-image: url(img/rubik2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* Esto es el titulo que cambiar de colorrrrrr */
+.logo:hover{
+    color: #f50000;
+    text-shadow: 00 10px #ff1e00f5,
+     00 10px rgba(255, 30, 0, 0.9),
+     00 20px rgba(255, 30, 0, 0.9),
+     00 40px rgba(255, 30, 0, 0.9),
+     00 80px rgba(255, 30, 0, 0.9),
+     00 160px rgba(255, 30, 0, 0.9),
+     00 320px rgba(255, 30, 0, 0.9),
+     00 640px rgba(255, 30, 0, 0.9),
+     00 1280px rgba(255, 30, 0, 0.9),
+     00 2560px rgba(255, 30, 0, 0.9),
+     00 5120px rgba(255, 30, 0, 0.9),
+}
+.neon{
+
+    background-image: linear-gradient(
+    to right,
+    #510086,
+    #ff0000e3 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.neon:hover {
+    background-position: 0;
+   }
+   
+.neon:hover::before {
+     width:100%;
+   }
+
+/* .neon:hover{
+    color: #fa0101;
+    text-shadow: 00 5px rgba(255, 30, 0, 0.9),
+     00 10px rgba(255, 30, 0, 0.9),
+     00 20px rgba(255, 30, 0, 0.9),
+     00 40px rgba(255, 30, 0, 0.9),
+     00 80px rgba(255, 30, 0, 0.9),
+     00 160px rgba(255, 30, 0, 0.9),
+     00 320px rgba(255, 30, 0, 0.9),
+     00 640px rgba(255, 30, 0, 0.9),
+     00 1280px rgba(255, 30, 0, 0.9),
+     00 2560px rgba(255, 30, 0, 0.9),
+     00 5120px rgba(255, 30, 0, 0.9),
+
+} */
+
+/*Esto es la lista de acerca de nosotros*/
+nav{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    
+
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 40px;
+    font-weight: 120;
+    font-size: 1.7rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+/*Esto es el texto que cambia de color */
+ul li:hover{
+ border-radius: 20px;
+ background-color: #0379ce;
+ color: #ff4444;
+ outline: inset;
+ outline-color: #8a8a8a;
+}
+header{
+    position: absolute;
+    bottom: 30%;
+    padding: 0 50px;
+}
+/* ====  esto es el titulo principal*/
+header h1{
+    
+    font-size: 7rem;
+}
+/*====   este es el titulo*/
+header h2{
+    font-size: 4rem;
+}
+/*====    este es el parrafo debajo del titulo*/
+header p{
+    margin-top: 20px;
+    margin-bottom: 20;
+    font-size: 1.7rem;
+}
+/*Este es boton de post now! */
+
+header button{
+
+    font-family:'Nunito', sans-serif;
+    padding: 1px 5px 1px 5px;
+    border-radius: 20px;
+    outline: inset;
+    outline-color: #8a8a8a;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(2, 2, 2);
+    width: 100px;
+    height: 50px;
+    background-color: #ff0000 ;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/* Dentro del boton post now esto es la flecha*/
+header  button img{
+    display: none;
+    
+}
+header button:hover img{
+    display: flex;
+    
+}
+header button:hover{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+}
+.container .flecha{
+    
+    position:relative;
+    height: 10px;
+    width: 10px;
+    right: 10%;
+    bottom: 0;
+   
+}
+/*Esto es el cubo */
+.container .emp{
+
+    position: relative;
+    height: 350px;
+    width: 350px;
+    left: 65%;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+    box-shadow: 10px;
+    top: 10px;
+    border-radius: 50%;
+    animation-name: girarb;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+@keyframes girarb{
+from{
+    transform:rotate(360deg);
+}to{
+    transform:rotate(0deg);
+}
+}
+/*Esto es el icono de enlances en la parte inferior */
+
+.iconos{
+    bottom: 8%;
+    position: absolute;
+    padding: 0 50px;
+}
+
+.iconos a > img{
+    font-size: 5.5rem;
+    padding: 0 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.iconos a > img:hover{
+ outline: inset;
+ outline-color: #8a8a8a;
+ background-color:  #fffffff1;
+ border-radius: 900px;
+}
+
