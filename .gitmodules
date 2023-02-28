@@ -1,0 +1,6 @@
+[submodule "PyR/suple/PyR/suple"]
+	path = PyR/suple/PyR/suple
+	url = https://github.com/jonathangg03/quill-explanation
+[submodule "PyR/suple/quill-explanation"]
+	path = PyR/suple/quill-explanation
+	url = https://github.com/jonathangg03/quill-explanation
